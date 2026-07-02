@@ -26,11 +26,12 @@ docs_ignore/
 
 # ------------------------------------------------------------
 #  Compiled output
-#  main.pdf is kept and tracked as a rendered demo.
-#  All other PDFs (cover page, rubric, Turnitin) are excluded.
+#  main.pdf and cover_page_sample.pdf are kept and tracked.
+#  All other PDFs (rubric, Turnitin) are excluded.
 # ------------------------------------------------------------
 *.pdf
 !main.pdf
+!cover_page_sample.pdf
 *.dvi
 
 # ------------------------------------------------------------
