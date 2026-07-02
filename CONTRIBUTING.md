@@ -6,7 +6,7 @@
 
 ## English
 
-Thank you for your interest in improving the XMUM Assignment Template!
+Thank you for your interest in improving the UIUC Assignment Template!
 This guide explains how to report issues, suggest improvements, and submit pull requests.
 
 ### Ways to Contribute
@@ -58,7 +58,7 @@ Feel free to open a [Discussion](../../discussions) for general questions that d
 
 ## 中文
 
-感谢你有兴趣为 XMUM 作业模板做出贡献！
+感谢你有兴趣为 UIUC 作业模板做出贡献！
 本指南说明如何提交 Issue、建议和 Pull Request。
 
 ### 贡献方式
