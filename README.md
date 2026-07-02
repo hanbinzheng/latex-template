@@ -37,7 +37,7 @@
 ### Prerequisites
 
 - **TeX Live 2022+** (or MiKTeX) with XeLaTeX
-- **Consolas** font (pre-installed on Windows; on macOS/Linux, install or substitute in `uiuc_asg.cls`)
+- **Consolas**  & **Menlo** font (Consolas is pre-installed on Windows; Menlo is pre-installed on macOS. For Linux, install or substitute in `uiuc_asg.cls`)
 - Recommended editor: **VS Code** + [LaTeX Workshop](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop)
 
 ### Usage

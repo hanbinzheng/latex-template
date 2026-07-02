@@ -37,7 +37,7 @@
 ### 前置要求
 
 - **TeX Live 2022+**（或 MiKTeX），需包含 XeLaTeX
-- **Consolas** 字体（Windows 系统预装；macOS/Linux 用户请在 `xmum_asg.cls` 中替换字体）
+- **Consolas** & **Menlo** 字体（Windows 系统预装 Consolas；macOS 系统预装 Menlo, Linux 用户请在 `uiuc_asg.cls` 中替换字体）
 - 推荐编辑器：**VS Code** + [LaTeX Workshop 插件](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop)
 
 ### 使用方法
@@ -60,7 +60,7 @@
 ```
 your-assignment/
 ├── main.tex                 ← 主文件（入口）
-├── xmum_asg.cls             ← 模板类文件（一般无需修改）
+├── uiuc_asg.cls             ← 模板类文件（一般无需修改）
 ├── ref.bib                  ← BibTeX 参考文献
 │
 ├── sections/                ← 每个 section 一个 .tex 文件（强烈推荐）
@@ -106,10 +106,10 @@ xelatex main
 
 ```latex
 % 正常版本（用于存档和提交给讲师）：
-\documentclass{xmum_asg}
+\documentclass{uiuc_asg}
 
 % Turnitin 版本（完全禁用页眉页脚）：
-\documentclass[turnitin]{xmum_asg}
+\documentclass[turnitin]{uiuc_asg}
 ```
 
 完整操作流程请参阅 [`sections/best_practices.tex`](sections/best_practices.tex)。

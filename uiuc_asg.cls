@@ -13,13 +13,13 @@
 %               ("UNIVERSITY OF ILLINOIS URBANA-CHAMPAIGN", "Page X of Y") from being
 %               flagged as similarity matches.
 %
-%               Usage:  \documentclass[turnitin]{uiuc_review}
+%               Usage:  \documentclass[turnitin]{uiuc_asg}
 %
-%  Usage (normal):  \documentclass{uiuc_review}
+%  Usage (normal):  \documentclass{uiuc_asg}
 % =============================================================================
 
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{uiuc_review}[2025/01/01 UIUC Assignment Template]
+\ProvidesClass{uiuc_asg}[2025/01/01 UIUC Assignment Template]
 
 % ---------------------------------------------------------------------------
 %  Class options
@@ -230,7 +230,8 @@
 % ---------------------------------------------------------------------------
 %  Monospace font (XeLaTeX only)
 % ---------------------------------------------------------------------------
-\setmonofont{Consolas}[Scale=0.9]
+% \setmonofont{Consolas}[Scale=0.9] % for windows
+\setmonofont{Menlo}[Scale=0.9] % for macbook
 
 % ---------------------------------------------------------------------------
 %  Code listing environments
