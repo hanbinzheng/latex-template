@@ -1,8 +1,8 @@
 <div align="center">
 
-# 厦门大学马来西亚分校作业 LaTeX 模板
+# 伊利诺伊大学厄巴纳香槟校区 LaTeX 模板
 
-**为 XMUM 英文作业设计的简洁、可靠的 LaTeX 模板。**
+**为 UIUC 英文作业设计的简洁、可靠的 LaTeX 模板。**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![XeLaTeX](https://img.shields.io/badge/编译器-XeLaTeX-green.svg)](https://www.tug.org/xetex/)
@@ -19,13 +19,11 @@
 </p>
 
 
-本模板自 **2025 年 5 月**开始维护，经过整整一学年在 XMUM 各门课程中的实际使用验证 —— 涵盖十几页的小报告到超过 **500 页**的 MPU4.1 社区服务期末报告。模板的可靠性得到了同专业同学和讲师的广泛认可。
-
 ## ✨ 功能特性
 
 | 功能 | 说明 |
 |---|---|
-| 📄 页眉页脚 | XMUM 风格 `XIAMEN UNIVERSITY MALAYSIA` 页眉，`Page X of Y` 页脚 |
+| 📄 页眉页脚 | UIUC 风格 `UNIVERSITY OF ILLINOIS URBANA-CHAMPAIGN` 页眉，`Page X of Y` 页脚 |
 | 📚 引用 | APA 格式，通过 `apacite` 实现 —— 支持 `\citet{}` 和 `\citep{}` |
 | 💻 代码块 | 支持 Python、SQL、JSON、HTML、JavaScript、C++、CMD 语法高亮 |
 | 🔗 交叉引用 | 通过 `cleveref` 实现的智能 `\cref{}` / `\Cref{}` |
@@ -104,7 +102,7 @@ xelatex main
 
 ## 📤 Turnitin 提交
 
-重复出现的 `XIAMEN UNIVERSITY MALAYSIA` 页眉和 `Page X of Y` 页脚可能被 Turnitin 判定为重复文本，导致相似度虚高。**只需改一个词**即可生成无页眉页脚的提交版本：
+重复出现的 `UNIVERSITY OF ILLINOIS URBANA-CHAMPAIGN` 页眉和 `Page X of Y` 页脚可能被 Turnitin 判定为重复文本，导致相似度虚高。**只需改一个词**即可生成无页眉页脚的提交版本：
 
 ```latex
 % 正常版本（用于存档和提交给讲师）：
@@ -128,5 +126,5 @@ xelatex main
 ---
 
 <div align="center">
-用 ❤️ 为 XMUM 学生打造
+用 ❤️ 为 UIUC 学生打造
 </div>

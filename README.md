@@ -1,6 +1,6 @@
 <div align="center">
 
-# XMUM Assignment Template
+# UIUC Assignment Template
 
 **A clean, production-ready LaTeX template for English assignments at Xiamen University Malaysia.**
 
@@ -19,14 +19,11 @@
 </p>
 
 
-Maintained since **May 2025** and battle-tested across a full academic year of XMUM coursework — from short weekly write-ups to a **500+ page** MPU4.1 Community Service Final Report.
-Widely adopted by classmates and acknowledged by lecturers for its clean, professional output.
-
 ## ✨ Features
 
 | Feature | Detail |
 |---|---|
-| 📄 Header & Footer | XMUM-style `XIAMEN UNIVERSITY MALAYSIA` header, `Page X of Y` footer |
+| 📄 Header & Footer | UIUC-style `UNIVERSITY OF ILLINOIS URBANA-CHAMPAIGN` header, `Page X of Y` footer |
 | 📚 Citations | APA style via `apacite` — `\citet{}` and `\citep{}` |
 | 💻 Code Blocks | Syntax-highlighted Python, SQL, JSON, HTML, JavaScript, C++, CMD |
 | 🔗 Cross-references | Smart `\cref{}` / `\Cref{}` via `cleveref` |
@@ -40,14 +37,14 @@ Widely adopted by classmates and acknowledged by lecturers for its clean, profes
 ### Prerequisites
 
 - **TeX Live 2022+** (or MiKTeX) with XeLaTeX
-- **Consolas** font (pre-installed on Windows; on macOS/Linux, install or substitute in `xmum_asg.cls`)
+- **Consolas** font (pre-installed on Windows; on macOS/Linux, install or substitute in `uiuc_asg.cls`)
 - Recommended editor: **VS Code** + [LaTeX Workshop](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop)
 
 ### Usage
 
 1. **Clone or download** this repository into your assignment folder:
    ```bash
-   git clone https://github.com/YOUR_USERNAME/XMUM_LaTeX_Template.git my-assignment
+   git clone https://github.com/YOUR_USERNAME/UIUC_LaTeX_Template.git my-assignment
    ```
 
 2. **Edit `main.tex`** — set your title, author, and student ID.
@@ -63,7 +60,7 @@ Widely adopted by classmates and acknowledged by lecturers for its clean, profes
 ```
 your-assignment/
 ├── main.tex                 ← Entry point
-├── xmum_asg.cls             ← Template class (do not edit unless necessary)
+├── uiuc_asg.cls             ← Template class (do not edit unless necessary)
 ├── ref.bib                  ← BibTeX references
 │
 ├── sections/                ← One .tex file per section (strongly recommended)
@@ -105,15 +102,15 @@ In **VS Code** with LaTeX Workshop, set the recipe to `latexmk` — it detects c
 
 ## 📤 Turnitin Submission
 
-The repeated `XIAMEN UNIVERSITY MALAYSIA` header and `Page X of Y` footer can inflate your Turnitin similarity score.
+The repeated `UNIVERSITY OF ILLINOIS URBANA-CHAMPAIGN` header and `Page X of Y` footer can inflate your Turnitin similarity score.
 Compile a clean version with a **single-word change**:
 
 ```latex
 % Normal version (for your records and lecturer submission):
-\documentclass{xmum_asg}
+\documentclass{uiuc_asg}
 
 % Turnitin version (headers/footers completely suppressed):
-\documentclass[turnitin]{xmum_asg}
+\documentclass[turnitin]{uiuc_asg}
 ```
 
 See [`sections/best_practices.tex`](sections/best_practices.tex) for the full workflow.
@@ -130,5 +127,5 @@ This project is licensed under the **MIT License** — see [LICENSE](LICENSE) fo
 ---
 
 <div align="center">
-Made with ❤️ for XMUM students
+Made with ❤️ for UIUC students
 </div>

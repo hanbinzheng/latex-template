@@ -47,8 +47,8 @@ Before opening an issue, please:
 ### Code Style
 
 - Use **4-space indentation** inside LaTeX environments.
-- Add an **English comment** above every non-obvious command or setting in `xmum_asg.cls`.
-- Keep `xmum_asg.cls` self-contained — do not add dependencies on external image files or local fonts that are not universally available.
+- Add an **English comment** above every non-obvious command or setting in `uiuc_asg.cls`.
+- Keep `uiuc_asg.cls` self-contained — do not add dependencies on external image files or local fonts that are not universally available.
 
 ### Questions?
 
@@ -99,8 +99,8 @@ Feel free to open a [Discussion](../../discussions) for general questions that d
 ### 代码风格
 
 - LaTeX 环境内使用 **4 空格缩进**。
-- `xmum_asg.cls` 中每条非显而易见的命令或设置，都需在上方加**英文注释**。
-- 保持 `xmum_asg.cls` 的自包含性 —— 不要新增对外部图片文件或不通用本地字体的依赖。
+- `uiuc_asg.cls` 中每条非显而易见的命令或设置，都需在上方加**英文注释**。
+- 保持 `uiuc_asg.cls` 的自包含性 —— 不要新增对外部图片文件或不通用本地字体的依赖。
 
 ### 有问题？
 
