@@ -15,7 +15,7 @@
 ---
 
 <p align="center">
-  <img src="figure/document_sample.jpg" alt="模板效果预览" width="600">
+  <img src="figure/document_sample.png" alt="模板效果预览" width="600">
 </p>
 
 

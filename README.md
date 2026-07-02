@@ -15,7 +15,7 @@
 ---
 
 <p align="center">
-  <img src="figure/document_sample.jpg" alt="Template Preview" width="600">
+  <img src="figure/document_sample.png" alt="Template Preview" width="600">
 </p>
 
 
