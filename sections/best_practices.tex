@@ -1,14 +1,11 @@
 % =============================================================================
 %  experience.tex  —  Typesetting Tips & Best Practices
-%
-%  This section documents real-world lessons learned from using this template
-%  across dozens of XMUM assignments over the course of a year.
 % =============================================================================
 
 \section{Best Practices}
 
 The tips in this section come from a year of using this template across
-XMUM assignments of all sizes — from 10-page weekly reports to a 500-page
+UIUC assignments of all sizes — from 10-page weekly reports to a 500-page
 community service final report.
 Following these practices will save you time and help you avoid common pitfalls.
 
@@ -57,8 +54,8 @@ In draft mode, figures are replaced by placeholder boxes, reducing compile
 time from minutes to seconds:
 
 \begin{verbatim}
-\documentclass[draft]{xum_review}   % Fast: figures shown as boxes
-\documentclass{xum_review}          % Normal: figures rendered fully
+\documentclass[draft]{uiuc_asg}   % Fast: figures shown as boxes
+\documentclass{uiuc_asg}          % Normal: figures rendered fully
 \end{verbatim}
 
 Switch back to the normal option only for your final compilation.
@@ -68,7 +65,7 @@ Switch back to the normal option only for your final compilation.
 % -----------------------------------------------------------------------------
 
 \textbf{Problem:} Turnitin scans every page of your PDF, including headers
-and footers. Because this template places \texttt{XIAMEN UNIVERSITY MALAYSIA}
+and footers. Because this template places \texttt{UNIVERSITY OF ILLINOIS URBANA-CHAMPAIGN}
 in the header and \texttt{Page X of Y} in the footer of \emph{every} page,
 Turnitin may flag these repeated strings as similarity matches, artificially
 inflating your similarity score.
@@ -94,7 +91,7 @@ to the normal version for your final lecturer submission.
           multiple lines of header/footer configuration.
     \item The body content, margins, and all formatting remain identical
           between the two versions.
-    \item Your lecturer's copy (with the XMUM header) and your Turnitin
+    \item Your lecturer's copy (with the UIUC header) and your Turnitin
           copy are compiled from the same source — no risk of accidentally
           submitting different versions.
 \end{itemize}
