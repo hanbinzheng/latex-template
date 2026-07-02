@@ -1,6 +1,6 @@
 % =============================================================================
-%  xum_review.cls — XMUM Assignment & Review Report Template
-%  Xiamen University Malaysia
+%  uiuc_asg.cls — UIUC Assignment & Review Report Template
+%  University of Illinois Urbana-Champaign
 %
 %  Compiler : XeLaTeX (required for Consolas monospace font)
 %  Based on : article (A4, 12pt)
@@ -10,30 +10,30 @@
 %  [turnitin]   Disable all headers and footers.
 %               Use this option when compiling the version you upload to
 %               Turnitin, to prevent the repeated header/footer text
-%               ("XIAMEN UNIVERSITY MALAYSIA", "Page X of Y") from being
+%               ("UNIVERSITY OF ILLINOIS URBANA-CHAMPAIGN", "Page X of Y") from being
 %               flagged as similarity matches.
 %
-%               Usage:  \documentclass[turnitin]{xum_review}
+%               Usage:  \documentclass[turnitin]{uiuc_review}
 %
-%  Usage (normal):  \documentclass{xum_review}
+%  Usage (normal):  \documentclass{uiuc_review}
 % =============================================================================
 
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{xum_review}[2025/01/01 XMUM Assignment Template]
+\ProvidesClass{uiuc_review}[2025/01/01 UIUC Assignment Template]
 
 % ---------------------------------------------------------------------------
 %  Class options
 % ---------------------------------------------------------------------------
-\newif\if@turnitin
-\@turnitinfalse
-\DeclareOption{turnitin}{\@turnitintrue}
-\DeclareOption*{\PassOptionsToClass{\CurrentOption}{article}}
-\ProcessOptions\relax
+\newif\if@turnitin % 创建一个新的条件开关变量命名为@turnitin
+\@turnitinfalse % 默认将这个开关设为false
+\DeclareOption{turnitin}{\@turnitintrue} % 当用户使用时将开关设为true
+\DeclareOption*{\PassOptionsToClass{\CurrentOption}{article}} % 处理未定义选项并将它们传递给 article
+\ProcessOptions\relax % 处理所有声明的选项, \relax表示处理完毕后停止
 
 % ---------------------------------------------------------------------------
 %  Base class
 % ---------------------------------------------------------------------------
-\LoadClass[a4paper,12pt]{article}
+\LoadClass[a4paper,12pt]{article} % 加载article基础类并传入 a4paper 和 12pt 参数
 
 % ---------------------------------------------------------------------------
 %  Core packages (loaded early — others may depend on these)
@@ -54,11 +54,11 @@
 \RequirePackage[htt]{hyphenat}          % Allow line-breaking inside \texttt{}
 
 % Allow line breaks at more characters inside URLs
-\def\UrlBreaks{\do\.\do\@\do\\\do\/\do\!\do\_\do\|\do\;\do\>%
+\def\UrlBreaks{\do\.\do\@\do\\\do\/\do\!\do\_\do\|\do\;\do\>% 表示在.字符处允许换行，\do是循环命令
   \do\]\do\)\do\,\do\?\do\'\do+\do\=\do\#\do\(\do\[}
 
 % \code{} — an inline code command that breaks lines gracefully
-\newcommand{\code}[1]{{\ttfamily\path{#1}}}
+\newcommand{\code}[1]{{\ttfamily\path{#1}}} % 定义一个新命令\code, 接受1个参数, 使用等宽字体显示参数内容
 
 % ---------------------------------------------------------------------------
 %  PDF and hyperlinks
@@ -70,8 +70,8 @@
 
 \hypersetup{
     bookmarks  = true,
-    pdftitle   = {XMUM Assignment},
-    pdfauthor  = {Xiamen University Malaysia}
+    pdftitle   = {UIUC Assignment},
+    pdfauthor  = {University of Illinois Urbana-Champaign}
 }
 
 % ---------------------------------------------------------------------------
@@ -103,10 +103,10 @@
         \let\thispagestyle\@gobble%  % future \thispagestyle{...} calls → no-op
     }
 \else
-    % Normal mode: XMUM-style header and page number footer
+    % Normal mode: UIUC-style header and page number footer
     \pagestyle{fancy}
     \fancyhf{}
-    \fancyhead[C]{XIAMEN UNIVERSITY MALAYSIA}
+    \fancyhead[C]{UNIVERSITY OF ILLINOIS URBANA-CHAMPAIGN}
     \fancyfoot[C]{Page \thepage\ of \pageref{LastPage}}
     \renewcommand{\headrulewidth}{0pt}
     \renewcommand{\footrulewidth}{0pt}
@@ -114,7 +114,7 @@
     % Plain style (used on the first page of the document body)
     \fancypagestyle{plain}{
         \fancyhf{}
-        \fancyhead[C]{XIAMEN UNIVERSITY MALAYSIA}
+	\fancyhead[C]{UNIVERSITY OF ILLINOIS URBANA-CHAMPAIGN}
         \fancyfoot[C]{}
         \renewcommand{\headrulewidth}{0pt}
         \renewcommand{\footrulewidth}{0pt}
@@ -147,7 +147,7 @@
 % ---------------------------------------------------------------------------
 \RequirePackage{tocloft}
 
-\renewcommand{\contentsname}{Contents}
+\renewcommand{\contentsname}{Contents} % 将目录标题改为 Contents
 
 % Dot leaders for all three heading levels
 \renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
